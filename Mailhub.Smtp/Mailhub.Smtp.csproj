@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -9,18 +9,25 @@
     <FileVersion>$(VersionPrefix)</FileVersion>
     <RepositoryUrl>https://github.com/gustavoscarvalhorj/Mailhub.Smtp</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageReadmeFile>LICENSE.txt</PackageReadmeFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Mailhub.Core" Version="1.0.3" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Update="LICENSE.txt">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-  </ItemGroup>
+
+    <ItemGroup>
+	    <None Include="..\LICENSE.txt" Pack="true" PackagePath="" />
+    </ItemGroup>
 
 </Project>
