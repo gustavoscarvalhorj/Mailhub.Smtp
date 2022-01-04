@@ -1,4 +1,4 @@
-# MailHub.Smtp [![Generic badge](https://img.shields.io/badge/v1.0.1-development-green.svg)](https://shields.io/)
+# Mailhub.Smtp [![Generic badge](https://img.shields.io/badge/v1.0.1-development-green.svg)](https://shields.io/)
 
 ## Introdução
 O projeto Mailhub.Smtp é a implementação do envio de e-mail através de um Smtp Server e tem como base a abstração concedida pelo pacote Mailhub.Core que está disponível aqui no [GitHub](https://github.com/gustavoscarvalhorj/MailHub.Core) e no [NuGet](https://www.nuget.org/packages/Mailhub.Core)
